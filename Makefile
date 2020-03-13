@@ -6,10 +6,13 @@ stop:
 	docker rm -f cfi-flask || true
 
 run: build stop
-	docker run -d -p 8081:8080 --name cfi-flask cfi-flask
+	docker run -d -p 8080:8080 --name cfi-flask cfi-flask
+
+run_debug:
+	python ./app.py
 
 test:
-	curl http://0.0.0.0:8081/books
+	curl http://0.0.0.0:8080/books
 
 terminal:
 	docker run -it cfi-flask sh
