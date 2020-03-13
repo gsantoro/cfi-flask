@@ -16,3 +16,15 @@ test:
 
 terminal:
 	docker run -it cfi-flask sh
+
+# Docker-compose actions
+build_compose:
+	docker-compose build
+
+run_compose: build_compose
+	docker-compose up -d
+
+test_compose:
+	curl --location \
+		--request GET '0.0.0.0:8080/books' \
+		--header 'Host: cfi.flask.com'
