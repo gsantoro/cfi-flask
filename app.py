@@ -3,11 +3,6 @@ from flask import Flask, request
 app = Flask("books")
 
 
-@app.route("/")
-def index():
-    return "Hello world"
-
-
 @app.route("/books", methods=["GET", "POST"])
 def books():
     if request.method == "GET":
