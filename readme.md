@@ -20,3 +20,6 @@ Run with docker-compose. Two containers, one for gunicorn and one for nginx
 ```bash
 make run_compose
 ```
+
+## Helm charts
+https://github.com/helm/charts/tree/master/stable/docker-registry

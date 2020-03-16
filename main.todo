@@ -1,0 +1,90 @@
+TODO:
+
+  todo:
+    [x] scaffold rest api with flask @done (20-03-13 18:38)
+    [x] test manually with postman @done (20-03-13 18:39)
+    [x] write makefile to build image and run @done (20-03-13 18:39)
+    [x] write dockerfile @done (20-03-13 18:39)
+    [x] add to github @done (20-03-13 19:04)
+      [x] create new repo @done (20-03-13 19:03)
+      [x] commit initial project with makefile and dockerfile @done (20-03-13 19:03)
+      [x] git push to master @done (20-03-13 19:04)
+      [x] added .dockerignore @done (20-03-13 19:09)
+    [x] makefile @done (20-03-13 20:25)
+      [x] `make run_debug` to run in debug mode with hot reload of code @done (20-03-13 19:33)
+      [x] `make run` inside gunicorn @done (20-03-13 20:26)
+      [x] `make run_compose` with docker-compose @done (20-03-13 20:26)
+      [x] split makefile into two (one for docker, one for docker-compose) @done (20-03-14 16:22)
+    [x] dockercompose @done (20-03-13 20:25)
+      [x] run with nginx as a side container of gunicorn @done (20-03-13 20:25)
+      [x] modify readme @done (20-03-13 20:25)
+    [x] test from inside dockerfile @done (20-03-13 18:39)
+    [x] explore wsgi alternatives @done (20-03-14 16:21)
+      [x] test gunicorn @done (20-03-14 16:21)
+    [ ] k8s
+      [x] setup docker hub at gbsantoro @done (20-03-16 20:22)
+        [x] docker login to docker hub with token @done (20-03-16 20:22)
+        [x] configure k8s to pull from docker hub @done (20-03-16 20:22)
+      [ ] app running as a pod with a single container (no nginx yet)
+        [x] setup docker registry @done (20-03-15 20:03)
+        [x] curl to check registry is accessible @done (20-03-15 20:03)
+        [ ] docker login to registry
+        [ ] k8s pod with docker registry. tutorial at https://www.digitalocean.com/community/tutorials/how-to-set-up-a-private-docker-registry-on-top-of-digitalocean-spaces-and-use-it-with-digitalocean-kubernetes
+    [ ] continue with kite.com tutorial
+      [ ] create Books model with marshmallow at https://github.com/marshmallow-code/flask-marshmallow
+      [ ] tutorial at https://kite.com/blog/python/flask-sqlalchemy-tutorial/
+      [ ] tutorial at https://medium.com/@tinuadeadeleke/a-beginners-guide-to-building-rest-apis-flask-flask-sqlalchemy-and-flask-marshmallow-5159d4eb46d8
+
+    [ ] distributed systems
+      [ ] add https with sidecar container on k8s
+      [ ] add monitoring with /topz on sidecar container on separate port
+      [ ] expose prometheus endpoint as sidecar container
+
+    [ ] CI with github actions
+
+    [ ] observability
+      [ ] distributed tracing
+
+    [ ] microservices
+      [ ] talks to another microservice in Golang with grpc
+
+  Maybe:
+    [ ] https://testdriven.io/blog/dockerizing-flask-with-postgres-gunicorn-and-nginx/
+
+  Flask:
+    [x] first app with simple hello endpoint @done (20-03-06 11:07)
+    [x] development mode (hot reloading) @done (20-03-06 11:07)
+    [x] variable rules (variables in endpoint) @done (20-03-06 11:23)
+    [x] Unique URLs / Redirection Behavior (trailing slash) @done (20-03-06 11:25)
+    [x] escape function @done (20-03-06 11:27)
+
+    [ ] https://flask.palletsprojects.com/en/1.1.x/quickstart/#accessing-request-data
+    [ ] production wsgi server
+    [ ] use for HEAD request
+    [ ] use JWT for auth
+    [ ] RBAC for authz
+    [ ] HATEOAS
+    [ ] flask-marshmallow
+    [ ] json-api
+
+    [ ] testing
+      [ ] understand contexts at https://flask.palletsprojects.com/en/1.1.x/quickstart/#context-locals
+
+    Tutorials:
+      [ ] https://kite.com/blog/python/flask-restful-api-tutorial/
+        [ ] Creating the API with Flask
+      [ ] https://auth0.com/blog/developing-restful-apis-with-python-and-flask/#Summary
+
+    Next:
+      [ ] https://flask.palletsprojects.com/en/1.1.x/quickstart/#static-files
+      [ ] https://flask.palletsprojects.com/en/1.1.x/quickstart/#rendering-templates
+
+  Documentation:
+    [ ] https://flask.palletsprojects.com/en/1.1.x/quickstart/#static-files
+
+  Mega tutorial:
+    [ ] https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+
+  Interviews:
+    go cardless:
+      [ ] heartbeats in flask
