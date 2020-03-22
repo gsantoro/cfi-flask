@@ -25,6 +25,8 @@ TODO:
       [x] setup docker hub at gbsantoro @done (20-03-16 20:22)
         [x] docker login to docker hub with token @done (20-03-16 20:22)
         [x] configure k8s to pull from docker hub @done (20-03-16 20:22)
+      [ ] setup k8s service
+      [ ] expose api endpoint (via minikube expose)
       [ ] app running as a pod with a single container (no nginx yet)
         [x] setup docker registry @done (20-03-15 20:03)
         [x] curl to check registry is accessible @done (20-03-15 20:03)
